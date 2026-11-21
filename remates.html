@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gran Remate $10 y 2x$15 | TejiArte Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><div class="logo-icon">🧶</div>Teji<span>Arte</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="remates.html" class="active">Remates $10 &amp; 2x$15</a>
+        <a href="nosotros.html">Marcas &amp; Taller</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-btn" id="openCartBtn">🛒<span class="cart-count">0</span></button>
+        <button class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" style="padding:3rem 0;">
+    <div class="container" style="text-align:center;">
+      <div class="hero-badge">⚡ LIQUIDACIÓN ESPECIAL</div>
+      <h1>Piezas Únicas a <span>$10</span> y Combos <span>2x$15</span></h1>
+      <p style="margin:0 auto;">Últimas unidades de temporada de nuestras marcas aliadas. ¡Ahorra hasta un 55% en tejidos 100% artesanales!</p>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="products-grid" id="rematesGrid"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">&copy; 2026 TejiArte Store Multimarca. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header"><h3>Tu Carrito 🧶</h3><button class="close-cart" id="closeCartBtn">&times;</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total-row"><span>Total:</span><span id="cartTotal">$0.00</span></div>
+      <button class="btn btn-primary" style="width:100%;" onclick="checkoutCart()">Finalizar Compra</button>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>

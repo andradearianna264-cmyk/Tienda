@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Multimarca | TejiArte Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><div class="logo-icon">🧶</div>Teji<span>Arte</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html" class="active">Catálogo</a>
+        <a href="remates.html">Remates $10 &amp; 2x$15</a>
+        <a href="nosotros.html">Marcas &amp; Taller</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="search-box">
+          <input type="text" id="quickSearchInput" placeholder="Buscar en catálogo...">
+          <button>🔍</button>
+        </div>
+        <button class="cart-btn" id="openCartBtn">🛒<span class="cart-count">0</span></button>
+        <button class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">Colección Completa</span>
+        <h2>Catálogo Multimarca de Crochet</h2>
+        <p>Filtra por categoría, edad del destinatario, marca artesanal o presupuesto ($10 a $75).</p>
+      </div>
+
+      <!-- Barra de Filtros Combinados -->
+      <div class="promo-box" style="flex-wrap:wrap; justify-content:space-between; margin-bottom:2.5rem;">
+        <div class="form-group" style="margin:0; min-width:190px; flex:1;">
+          <label for="filterCategory">Categoría</label>
+          <select id="filterCategory">
+            <option value="all">Todas las categorías</option>
+            <option value="ropa">Ropa a Crochet</option>
+            <option value="zapatos">Zapatos y Patucos</option>
+            <option value="accesorios">Accesorios</option>
+            <option value="peluches">Peluches Amigurumi</option>
+            <option value="otros">Mantas y Sets</option>
+          </select>
+        </div>
+
+        <div class="form-group" style="margin:0; min-width:190px; flex:1;">
+          <label for="filterAudience">Público Objetivo</label>
+          <select id="filterAudience">
+            <option value="all">Todo público</option>
+            <option value="bebes">Bebés</option>
+            <option value="ninos">Niños</option>
+            <option value="jovenes">Jóvenes</option>
+            <option value="adultos">Adultos</option>
+            <option value="mayores">Personas Mayores</option>
+          </select>
+        </div>
+
+        <div class="form-group" style="margin:0; min-width:190px; flex:1;">
+          <label for="filterBrand">Marca Artesanal</label>
+          <select id="filterBrand">
+            <option value="all">Todas las marcas</option>
+            <option value="HiloSol">Marca: HiloSol</option>
+            <option value="NubeLana">Marca: NubeLana</option>
+            <option value="MimoTejido">Marca: MimoTejido</option>
+            <option value="PuntoChic">Marca: PuntoChic</option>
+            <option value="LanaVibe">Marca: LanaVibe</option>
+            <option value="AbuelaTeje">Marca: AbuelaTeje</option>
+          </select>
+        </div>
+
+        <div class="form-group" style="margin:0; min-width:190px; flex:1;">
+          <label for="filterPrice">Rango de Oferta</label>
+          <select id="filterPrice">
+            <option value="all">Todos ($10 - $75)</option>
+            <option value="10">Solo Remates a $10</option>
+            <option value="15">Remates $10 y 2x$15</option>
+            <option value="40">Hasta $40</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Contenedor poblado dinámicamente por script.js -->
+      <div class="products-grid" id="catalogGrid"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">&copy; 2026 TejiArte Store Multimarca. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header"><h3>Tu Carrito 🧶</h3><button class="close-cart" id="closeCartBtn">&times;</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total-row"><span>Total:</span><span id="cartTotal">$0.00</span></div>
+      <button class="btn btn-primary" style="width:100%;" onclick="checkoutCart()">Finalizar Compra</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

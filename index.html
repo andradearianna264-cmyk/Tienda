@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TejiArte Store | Tienda Online Multimarca de Crochet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Cintillo superior de promociones -->
+  <div class="top-banner">
+    🧶 GRAN REMATE DE TEMPORADA: Piezas seleccionadas a <span>$10</span> y combos <span>2x$15</span> • Envíos a todo el país
+  </div>
+
+  <!-- Barra de Navegación Fija -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🧶</div>
+        Teji<span>Arte</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="remates.html">Remates $10 &amp; 2x$15</a>
+        <a href="nosotros.html">Marcas &amp; Taller</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="search-box">
+          <input type="text" id="quickSearchInput" placeholder="Buscar prenda, marca...">
+          <button aria-label="Buscar">🔍</button>
+        </div>
+
+        <button class="cart-btn" id="openCartBtn" aria-label="Abrir carrito">
+          🛒
+          <span class="cart-count">0</span>
+        </button>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Hero (Gran Remate) -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">🔥 GRAN REMATE MULTIMARCA</div>
+        <h1>Arte tejido a mano con precios desde <span>$10 hasta $75</span></h1>
+        <p>Descubre ropa, zapatos, accesorios y peluches de crochet hechos por las mejores marcas artesanales. Diseños únicos para bebés, niños, jóvenes, adultos y personas mayores.</p>
+        <div class="hero-cta-group">
+          <a href="remates.html" class="btn btn-primary">Ver Remates a $10 y 2x$15</a>
+          <a href="catalogo.html" class="btn btn-outline">Explorar Catálogo</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <strong>$10</strong>
+            <span>Piezas en remate</span>
+          </div>
+          <div class="stat-item">
+            <strong>2x$15</strong>
+            <span>Combos seleccionados</span>
+          </div>
+          <div class="stat-item">
+            <strong>+6 Marcas</strong>
+            <span>100% Hecho a mano</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card-main">
+          <img src="imagenes/Amigurumi Spider Hero Crochet Pattern_ A Step-by-Step Guide.jfif" alt="Colección colorida de crochet artesanal">
+        </div>
+        <div class="promo-floating-badge">
+          ¡Lleva 2 por $15!
+          <small>En accesorios y amigurumis</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Franja de Ofertas Destacadas -->
+  <div class="container promo-strip">
+    <div class="promo-box">
+      <div class="promo-icon">$10</div>
+      <div>
+        <h3>Zona Remate $10</h3>
+        <p>Tops, gorros y patucos de bebé a precio único.</p>
+        <img src="imagenes/1138707087018520298.jfif">
+      </div>
+    </div>
+    <div class="promo-box">
+      <div class="promo-icon">2x$15</div>
+      <div>
+        <h3>Combos 2x$15</h3>
+        <p>Combina peluches mini y accesorios juveniles.</p>
+        <img src="imagenes/Crochet Bee Penguin – Free Crochet….jfif">
+      </div>
+    </div>
+    <div class="promo-box">
+      <div class="promo-icon">$75</div>
+      <div>
+        <h3>Tope Máximo $75</h3>
+        <p>Abrigos, mantas y sets premium sin sobreprecios.</p>
+        <img src="imagenes/Spider Web C2C Afghan Crochet Pattern.jfif">
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de Productos y Ofertas Destacadas -->
+  <section class="section-padding" id="productos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge-tag">Ofertas Imperdibles</span>
+        <h2>Productos y Remates Destacados</h2>
+        <p>Filtra al instante nuestras promociones de $10, combos 2x$15 y piezas estrella de cada marca.</p>
+      </div>
+
+      <div class="filter-bar reveal">
+        <button class="filter-btn home-filter active" data-filter="all">Todos los Destacados</button>
+        <button class="filter-btn home-filter" data-filter="remate">🔥 Remates $10 y 2x$15</button>
+        <button class="filter-btn home-filter" data-filter="ropa">Ropa a Crochet</button>
+        <button class="filter-btn home-filter" data-filter="zapatos">Zapatos</button>
+        <button class="filter-btn home-filter" data-filter="accesorios">Accesorios</button>
+        <button class="filter-btn home-filter" data-filter="peluches">Peluches</button>
+      </div>
+
+      <div class="products-grid" id="featuredProductsGrid">
+        <!-- Renderizado dinámico desde script.js -->
+      </div>
+
+      <div style="text-align:center; margin-top:2.5rem;">
+        <a href="catalogo.html" class="btn btn-outline">Ver Todo el Catálogo Multimarca →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Catálogo por Categorías y Público -->
+  <section class="section-padding bg-alt" id="categorias">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge-tag">Para Toda la Familia</span>
+        <h2>Explora por Categoría y Público</h2>
+        <p>Creaciones pensadas para bebés, niños, jóvenes, adultos y personas mayores con hilos hipoalergénicos.</p>
+      </div>
+
+      <div class="categories-grid reveal">
+        <a href="catalogo.html?cat=ropa" class="cat-card">
+          <span class="cat-emoji">👚</span>
+          <h3>Ropa a Crochet</h3>
+          <p>Tops juveniles, cárdigans para adultos y chales cálidos para mayores.</p>
+        </a>
+        <a href="catalogo.html?cat=zapatos" class="cat-card">
+          <span class="cat-emoji">👟</span>
+          <h3>Zapatos y Patucos</h3>
+          <p>Escarpines suaves para bebés y pantuflas ergonómicas.</p>
+        </a>
+        <a href="catalogo.html?cat=accesorios" class="cat-card">
+          <span class="cat-emoji">👜</span>
+          <h3>Accesorios</h3>
+          <p>Bolsos tote, bucket hats, diademas y bufandas modernas.</p>
+        </a>
+        <a href="catalogo.html?cat=peluches" class="cat-card">
+          <span class="cat-emoji">🧸</span>
+          <h3>Peluches Amigurumi</h3>
+          <p>Muñecos seguros para niños y colecciones de regalo.</p>
+        </a>
+        <a href="remates.html" class="cat-card">
+          <span class="cat-emoji">🏷️</span>
+          <h3>Especial Remates</h3>
+          <p>Liquidación directa a $10 y paquetes 2x$15.</p>
+        </a>
+      </div>
+
+      <!-- Marcas Disponibles -->
+      <div class="brands-showcase reveal">
+        <span class="badge-tag">Alianza Artesanal</span>
+        <h3>Nuestras Marcas Disponibles</h3>
+        <p style="color:var(--text-muted); font-size:0.92rem;">Selecciona calidad garantizada por talleres independientes especializados:</p>
+        <div class="brands-list">
+          <a href="catalogo.html" class="brand-chip">Marca: HiloSol</a>
+          <a href="catalogo.html" class="brand-chip">Marca: NubeLana</a>
+          <a href="catalogo.html" class="brand-chip">Marca: MimoTejido</a>
+          <a href="catalogo.html" class="brand-chip">Marca: PuntoChic</a>
+          <a href="catalogo.html" class="brand-chip">Marca: LanaVibe</a>
+          <a href="catalogo.html" class="brand-chip">Marca: AbuelaTeje</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section class="section-padding" id="contacto">
+    <div class="container">
+      <div class="contact-wrapper reveal">
+        <div class="contact-info">
+          <span class="badge-tag">Atención Personalizada</span>
+          <h3>¿Buscas una talla o color especial?</h3>
+          <p>Escríbenos para consultar disponibilidad de nuestros remates o encargar piezas personalizadas de cualquiera de nuestras marcas.</p>
+          <ul class="info-list">
+            <li>📍 Envíos nacionales e internacionales</li>
+            <li>🕒 Lunes a Sábado: 9:00 AM – 7:00 PM</li>
+            <li>✉️ hola@tejiartestore.com</li>
+            <li>📱 WhatsApp Directo: +1 (555) 234-5678</li>
+          </ul>
+        </div>
+
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="cName">Nombre completo *</label>
+            <input type="text" id="cName" placeholder="Ej. Camila Morales">
+            <span class="error-msg" id="errName">Por favor ingresa tu nombre (mínimo 3 caracteres).</span>
+          </div>
+
+          <div class="form-group">
+            <label for="cEmail">Correo electrónico *</label>
+            <input type="email" id="cEmail" placeholder="tu@correo.com">
+            <span class="error-msg" id="errEmail">Ingresa un correo electrónico válido.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="cTopic">Motivo de consulta</label>
+            <select id="cTopic">
+              <option value="remate">Consulta sobre Remates $10 / 2x$15</option>
+              <option value="pedido">Pedido personalizado por marca</option>
+              <option value="mayorista">Compra al por mayor</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="cMessage">Mensaje *</label>
+            <textarea id="cMessage" rows="4" placeholder="Cuéntanos qué producto, talla o marca te interesa..."></textarea>
+            <span class="error-msg" id="errMessage">Escribe un mensaje de al menos 10 caracteres.</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;">Enviar Mensaje</button>
+          <div id="formFeedback" class="form-feedback"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>🧶 TejiArte Store</h4>
+          <p style="font-size:0.9rem; color:#C9BBAE;">Tu marketplace multimarca de tejido a crochet. Calidad artesanal, colores vibrantes y precios justos para todas las generaciones.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="TikTok">TT</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Pinterest">PI</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo Completo</a></li>
+            <li><a href="remates.html">Zona de Remates ($10 - 2x$15)</a></li>
+            <li><a href="nosotros.html">Nuestras Marcas</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Público y Tallas</h4>
+          <ul>
+            <li><a href="catalogo.html">Bebés (0 - 24 meses)</a></li>
+            <li><a href="catalogo.html">Niños y Niñas</a></li>
+            <li><a href="catalogo.html">Moda Juvenil</a></li>
+            <li><a href="catalogo.html">Adultos y Personas Mayores</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Métodos de Pago Aceptados</h4>
+          <div class="payment-badges">
+            <span class="pay-badge">💳 Visa</span>
+            <span class="pay-badge">💳 Mastercard</span>
+            <span class="pay-badge">🅿️ PayPal</span>
+            <span class="pay-badge">💸 Pago Móvil / Transferencia</span>
+            <span class="pay-badge">🍎 Apple Pay</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 TejiArte Store Multimarca. Todos los derechos reservados. Diseñado con pasión artesanal.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Carrito Lateral (Drawer) -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>Tu Carrito 🧶</h3>
+      <button class="close-cart" id="closeCartBtn">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total estimado:</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <button class="btn btn-primary" style="width:100%;" onclick="checkoutCart()">Finalizar Compra</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestras Marcas y Taller | TejiArte Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><div class="logo-icon">🧶</div>Teji<span>Arte</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="remates.html">Remates $10 &amp; 2x$15</a>
+        <a href="nosotros.html" class="active">Marcas &amp; Taller</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-btn" id="openCartBtn">🛒<span class="cart-count">0</span></button>
+        <button class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">Comunidad Artesanal</span>
+        <h2>6 Marcas Unidas por el Amor al Crochet</h2>
+        <p>Seleccionamos talleres familiares y diseñadores independientes que trabajan con algodón peinado, lana merino suave e hilos hipoalergénicos.</p>
+      </div>
+
+      <div class="categories-grid">
+        <div class="cat-card" style="cursor:default;">
+          <span class="cat-emoji">☀️</span>
+          <h3>Marca: HiloSol</h3>
+          <p>Especialistas en tops juveniles, bucket hats y ropa fresca de verano.</p>
+        </div>
+        <div class="cat-card" style="cursor:default;">
+          <span class="cat-emoji">☁️</span>
+          <h3>Marca: NubeLana</h3>
+          <p>Creadores de peluches amigurumi con ojos de seguridad para niños.</p>
+        </div>
+        <div class="cat-card" style="cursor:default;">
+          <span class="cat-emoji">👶</span>
+          <h3>Marca: MimoTejido</h3>
+          <p>Patucos, mantas y gorros ultrasuaves certificados para piel de bebé.</p>
+        </div>
+        <div class="cat-card" style="cursor:default;">
+          <span class="cat-emoji">✨</span>
+          <h3>Marca: PuntoChic</h3>
+          <p>Bolsos granny square, scrunchies y accesorios de tendencia urbana.</p>
+        </div>
+        <div class="cat-card" style="cursor:default;">
+          <span class="cat-emoji">🧥</span>
+          <h3>Marca: LanaVibe</h3>
+          <p>Cárdigans oversize y suéteres trenzados de colección para adultos.</p>
+        </div>
+        <div class="cat-card" style="cursor:default;">
+          <span class="cat-emoji">👵</span>
+          <h3>Marca: AbuelaTeje</h3>
+          <p>Chales calados y pantuflas térmicas antideslizantes para mayores.</p>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:3rem;">
+        <a href="catalogo.html" class="btn btn-primary">Explorar Productos de Todas las Marcas</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">&copy; 2026 TejiArte Store Multimarca. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header"><h3>Tu Carrito 🧶</h3><button class="close-cart" id="closeCartBtn">&times;</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total-row"><span>Total:</span><span id="cartTotal">$0.00</span></div>
+      <button class="btn btn-primary" style="width:100%;" onclick="checkoutCart()">Finalizar Compra</button>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>
