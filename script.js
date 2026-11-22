@@ -148,7 +148,7 @@ const PRODUCTS_DB = [
   },
   {
     id: 13,
-    name: "Dúo de Patitos Amigurumi con Gorrito",
+    name: "Dúo de Patitos Amigurumi",
     brand: "NubeLana",
     category: "peluches",
     audience: "ninos",
@@ -156,7 +156,7 @@ const PRODUCTS_DB = [
     oldPrice: 28,
     promo: "PROMO 2x$15",
     featured: true,
-    image: "imagenes/Marjorie Goose CROCHET PATTERN - Etsy.jfif"
+    image: "https://www.lovelycraft.com/wp-content/uploads/2021/10/Clovis-El-Pato-PDF-Amigurumi-Patron-Gratis-1.jpg"
   },
   {
     id: 14,
@@ -168,7 +168,7 @@ const PRODUCTS_DB = [
     oldPrice: 35,
     promo: "EDICIÓN ESPECIAL",
     featured: true,
-    image: "imagenes/SNOOPY.jfif"
+    image: "https://cozybear.in/cdn/shop/files/crochetsnoopyplushietutorial.jpg?v=1770626819"
   },
   {
     id: 15,
@@ -180,7 +180,7 @@ const PRODUCTS_DB = [
     oldPrice: 52,
     promo: "NUEVO",
     featured: true,
-    image: "imagenes/⏵ Stuffed Animals To Crochet 📺🎞️⏹️.jfif"
+    image: "https://imgv2-2-f.scribdassets.com/img/document/561962610/original/fa9a243197/1?v=1"
   },
   {
     id: 16,
@@ -192,7 +192,7 @@ const PRODUCTS_DB = [
     oldPrice: 38,
     promo: "HECHO A MANO",
     featured: true,
-    image: "imagenes/583005114289400788.jfif"
+    image: "https://i.pinimg.com/736x/c2/ba/d6/c2bad6d4e332a62253ac9723c5d85779.jpg"
   }
 ];
 
